@@ -14,8 +14,12 @@ class App extends React.Component {
         }
     }
 
-    onSearchChange(event) {
-        console.log(event.target.value);
+    onSearchChange = (event) => {
+        this.setState({ searchfield: event.target.value })
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase());
+        })
+        console.log(filteredRobots);
     }
 
     render() {
