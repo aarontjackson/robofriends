@@ -15,6 +15,11 @@ class App extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.setState({robots: robots})
+        console.log('check');
+    }
+
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
     }
