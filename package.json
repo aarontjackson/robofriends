@@ -3,10 +3,6 @@
   "hompage": "https://aarontjackson.github.io/robofriends/",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "^6.13.6",
-    "node": "^13.7.0"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -38,16 +34,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "root": "build/",
-  "routes": {
-    "/**": "index.html"
-  },
-  "https_only": true,
-  "headers": {
-    "/**": {
-      "Strict-Transport-Security": "max-age=31557600"
-    }
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
