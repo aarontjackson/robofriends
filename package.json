@@ -1,6 +1,6 @@
 {
   "name": "robofriends",
-  "hompage": "https://aarontjackson.github.io/robofriends/",
+  "homepage": "https://aarontjackson.github.io/robofriends/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
