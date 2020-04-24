@@ -9,7 +9,7 @@ import 'tachyons';
 import { searchRobots } from './reducers';
 import * as serviceWorker from './serviceWorker';
 
-const logger = createLogger;
+const logger = createLogger();
 const store = createStore(searchRobots, applyMiddleware(logger))
 
 ReactDOM.render(
