@@ -6,7 +6,7 @@ import Scroll from './components/Scroll';
 import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
-import { setSearchField } from './actions';
+import { setSearchField, requestRobots } from './actions';
 
 const mapStateToProps = state => {
     return {
@@ -20,7 +20,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => {
     return { 
         onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-        onRequestRobots: () => rquestRobots(dispatch)
+        onRequestRobots: () => requestRobots(dispatch)
     }
 }
 
