@@ -6,8 +6,13 @@ import Scroll from './components/Scroll';
 import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
-import { setSearchField } from '../actions';
+import { setSearchField } from './actions';
 
+const mapStateToProps = state => {
+    return {
+        searchField: state.searchRobots.searchField
+    }
+}
 
 
 class App extends Component {
