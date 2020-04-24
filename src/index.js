@@ -11,7 +11,7 @@ import { searchRobots } from './reducers';
 import * as serviceWorker from './serviceWorker';
 
 const logger = createLogger();
-const store = createStore(searchRobots, applyMiddleware(tuhnkMiddleware, logger))
+const store = createStore(searchRobots, applyMiddleware(thunkMiddleware, logger))
 
 ReactDOM.render(
     <Provider store={store}>
