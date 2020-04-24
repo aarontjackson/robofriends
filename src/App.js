@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import CardList from './components/CardList';
 import SearchBox from './components/SearchBox';
 import Scroll from './components/Scroll';
 import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
+
+import { setSearchField } from '../actions';
 
 
 
@@ -48,4 +51,4 @@ class App extends Component {
 
 
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
