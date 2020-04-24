@@ -10,7 +10,7 @@ import { setSearchField } from './actions';
 
 const mapStateToProps = state => {
     return {
-        searchField: state.searchRobots.searchField
+        searchField: state.searchField
     }
 }
 
@@ -24,7 +24,7 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            robots: [],
+            robots: []
         }
     }
 
