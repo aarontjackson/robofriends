@@ -8,7 +8,6 @@ class Header extends Component {
     // }
 
     render() {
-        console.log('Header')
        return (
        <div>
            
